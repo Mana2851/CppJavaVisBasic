@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PROJECT1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ae940\AppData\Local\Temp\RSP5BE7.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/PROJECT1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Lindenwood\2018 Fall\Database Systems\Projects\Database1\PROJECT1.CPP"
+]
+Creating command line "cl.exe @C:\Users\ae940\AppData\Local\Temp\RSP5BE7.tmp" 
+<h3>Output Window</h3>
+Compiling...
+PROJECT1.CPP
+d:\lindenwood\2018 fall\database systems\projects\database1\project1.cpp(20) : warning C4786: 'std::reverse_iterator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> > const &,std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *,int>' : identifier was truncated to '255' characters in the debug information
+d:\lindenwood\2018 fall\database systems\projects\database1\project1.cpp(20) : warning C4786: 'std::reverse_iterator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > *,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> > &,std::basic_string<char,std::char_traits<char>,std::allocator<char> > *,int>' : identifier was truncated to '255' characters in the debug information
+d:\lindenwood\2018 fall\database systems\projects\database1\project1.cpp(334) : error C2360: initialization of 'i' is skipped by 'case' label
+        d:\lindenwood\2018 fall\database systems\projects\database1\project1.cpp(329) : see declaration of 'i'
+d:\lindenwood\2018 fall\database systems\projects\database1\project1.cpp(338) : error C2361: initialization of 'i' is skipped by 'default' label
+        d:\lindenwood\2018 fall\database systems\projects\database1\project1.cpp(329) : see declaration of 'i'
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+PROJECT1.OBJ - 2 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

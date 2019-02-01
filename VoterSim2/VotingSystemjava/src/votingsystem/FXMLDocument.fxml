@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.stage.Stage?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+
+<!--
+- @author Adam Ebel
+- date 10/9/2018
+-->
+
+<VBox alignment="TOP_CENTER" prefHeight="520.0" prefWidth="507.0" style="-fx-background-color: #6991AC;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="votingsystem.FXMLDocumentController">
+    <children>
+      <HBox> <!-- Holds the adding candidate text bar and adding candidate button -->
+        <TextField fx:id="addText" editable="true" focusTraversable="false" maxHeight="50.0" promptText="Add candidate"/>
+        <Button fx:id="clickToAdd" mnemonicParsing="false" onAction="#addCandidate" maxHeight="50.0" prefWidth="120" text="Click to Add"/>
+      </HBox>
+      <HBox> <!-- Holds the deleting candidate drop down bar -->
+        <ComboBox fx:id="dropDname" layoutX="15.0" layoutY="33.0" promptText="Delete Candidate">
+           <items>
+           </items>
+        </ComboBox>
+        <!--<TextArea fx:id="deleteText" editable="true" focusTraversable="false" prefHeight="50.0" maxWidth="300.0" wrapText="true" text="Type here to remove candidate"/>-->
+        <Button fx:id="clickToDelete" mnemonicParsing="false" onAction="#deleteCandidate" maxHeight="50.0" prefWidth="120" text="Click to Delete"/>
+      </HBox>
+      <HBox> <!-- Holds the reset all button as well as the quit button -->
+        <Button fx:id="resetb" mnemonicParsing="false" onAction="#resetAll" text="Reset All"/>
+        <Button fx:id="quit" mnemonicParsing="false" onAction="#quit" text="Quit" />
+      </HBox>
+      <TabPane prefHeight="399.0" prefWidth="507.0" tabClosingPolicy="UNAVAILABLE" >
+        <tabs>
+          <Tab text="Bar Chart" style="-fx-color: #F1AA90;">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #6991AC;">
+                     <children>
+                        <BarChart fx:id="candBarChart" layoutX="-7.0" layoutY="-39.0">
+                          <xAxis>
+                            <CategoryAxis label="Candidiate Options" side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis label="Vote Count" side="LEFT" upperBound="10.0" />
+                          </yAxis>
+                        </BarChart>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Pie Chart" style="-fx-color: #F1AA90;">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #6991AC;">
+                     <children>
+                        <PieChart fx:id="candPieChart" layoutX="-22.0" layoutY="-2.0" prefHeight="363.0" prefWidth="530.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>

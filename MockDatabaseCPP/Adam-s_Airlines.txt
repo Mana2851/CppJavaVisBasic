@@ -1,0 +1,30 @@
+Necessary functions:
+
+add() //It begins the command chain to add something new to the files
+	- addCity() // Triggered with the "c". Opens Cities file, appends information to the end if there's no exact copy before closing it
+	- addAirline() //Triggered with the second "a". Opens Airlines file, appends information to the end if there's no exact copy before closing it
+	- addFlight() //Triggered with the the "f". Opens the Flights file, appends information to the end if there's no exact copy before closing it
+
+listFile() //It begins the command chain to list the contents of an existing file
+	- listCities() //Triggered with the "c". Opens Cities file, reads each line, formats it in the way the project requires and then prints it
+	- listAirlines() //Triggered with the "a". Opens Airlines file, reads each line, formats it in the way the project requires and then prints it.
+	- listFlights() //Triggered with the "f". Opens Flights file, reads each line, formats it in the way the project requires and then prints it.
+
+find() //It begins the command to search for a list of flights.
+	- searchAirport() //This takes both departure and arrival names as separate arguments, as well as the 0 or 1. It looks up the Flights file for the departure city code and then checks them all for the arrival code. In each of them, check if there's a 1. If so, you call this function again with the updated parameters and always send a 0. If it finds a flight that works, it stores it somewhere and continues. I imagine I'll have to help you with that as the description by itself isn't that clear.
+
+quit() //This just sets the boolean that keeps asking for input to false so that the program can terminate.
+
+Auxiliary functions:
+	- breakInput() //This is called when you're reading the input and need to separate everything into an array of strings, so that you can get the order of the commands better.
+	- formatOutput() //Call this when preparing the information for printing in the list function. You should be able to use this function for both the city listing and the airline listing. It's possible to also do it for the flight listing if you add in a condition to check for at the start of it.
+	
+This is what I can tell you'll need from the very start.
+More will crop up as you make the program. I didn't specify the arguments necessary, but you'll need to send stuff when you call the functions. Call out if you're confused.
+
+
+Readme
+findflight
+	direct flight
+	transfering flight
+List flights

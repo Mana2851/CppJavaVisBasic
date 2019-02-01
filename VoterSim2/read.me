@@ -1,0 +1,54 @@
+Name: Adam Ebel
+Date: 10/10/2018
+Windows 10
+NetBeans IDE 8.2
+
+As of making this read.me file bugs include:
+
+Adding more than one candidate causes the label for the last candidate to not be visible in the bar graph's x labels.
+(i find this one rather superfical due to the key that lables the colors of the graph)
+	add Adam -> Adam shows on bottom of bar graph
+	then add James -> only Adam shows on bottom of bar graph
+	then add Sam -> Only Adam and James show on bottom of bar graph
+
+The bar graph shows .1-.9 on the vote count giving the implication that you can have a partial vote (though it is impossible to get a floating point vote)
+	-Was told not to worry about it
+
+Less a bug, the more candidates that are entered the harder it is to click on the correct candidate
+	-just gives a strange limit on canidates. 
+The longer the name the more likely the orientation of the name will change to vertical and at that point the graph gets smaller and smaller
+	- with really long strings at candidate names it visually acts strange
+with a combination of the last two bugs on the more extreme side there is a time when you can force the bargraph to disapear as well as the key 
+
+Log:
+In Class - The first part of the program was done in class, I am sure you can see formating that you did in class.
+
+10/8 
+- That day was mostly a theory day, thinking on how to have the two graphs interact and showing the same information. 
+- I came up with the idea of using only one array to keep the votes and candidates in, unifying the data for both graphs.
+- Why stop there, why not create the graphs at the same function. if you change one graph both have to be changed.
+- mild alterations to the code made in class
+
+10/9 
+- Started merging the functions that created the graphs, came with it an idea to alter the graphs at the same time so I merged the grow functions too. 
+- includes clicking on the bar graph changing the pie graph
+- added an add button quit button and reset button
+- add candidate function
+- fixed capitalization differences resulting in the same name being counted 2 times
+- Altered the title on window of program
+- altered arraylist where I keep the names of candidates to keep only lowercase (fixed a few bugs)
+- altered buttons and colors to a slightly "more easy on the eyes" theme
+- Altered window sizes to show the graph and key on graph without scrolling
+- Partially completed reset function (left it with a bug or two)
+
+10/10 
+- Fixed and finished reset function
+- Drop down list and delete functions created 
+- Quit function
+- added pop up window for attempting to add a candidate that already exists in the arraylist
+
+10/11 - Fixed a size issue for the add candidate text box, textarea is not a thing to use; textfield is meant for single lines
+- Fixed all other major issues
+- All bugs(that I could find) involving the deleteCanidate function have been solved
+- ResetAll no longer results in a bug
+- fixed the deleting a null problem in the deleteCandidate function 

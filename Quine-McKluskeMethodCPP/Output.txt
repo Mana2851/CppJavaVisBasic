@@ -1,0 +1,29 @@
+
+The Original Boolean Expression is:
+F = (ABC) + (Abc) + (ABc) + (AbC) + (abC) + (aBc)
+The Minimal Boolean Expression is:
+F = A + (Bc)
+
+The Original Boolean Expression is:
+F = (ABCD) + (ABcD) + (ABcd) + (AbCD) + (aBCD) + (aBCd) + (aBcD) + (abcD)
+The Minimal Boolean Expression is:
+F = (ABc) + (ACD) + (aBC) + (acD)
+
+The Original Boolean Expression is:
+F = (aBcDEf) + (ABcdEF) + (AbCdEF) + (ABCdEF) + (aBCDEf) + (ABCDEF) + (ABcdEf) + (AbCDEF) + (aBcDef)
+The Minimal Boolean Expression is:
+F = (ABcdE) + (ACEF) + (aBcDf) + (aBDEf)
+
+The Original Boolean Expression is:
+F = (abcde) + (AbCde) + (ABcdE) + (abCde) + (aBCDE) + (Abcde) + (abCDE) + (abCDe) + (aBcDE) + (ABCDE) + (AbCDe)
+The Minimal Boolean Expression is:
+F = (ABcdE) + (aBDE) + (aCDE) + (BCDE) + (bCe) + (bde)
+
+The Original Boolean Expression is:
+F = (aBCdE) + (ABCde) + (ABcde) + (aBcdE) + (ABcDe) + (ABCdE) + (AbCde) + (AbCdE)
+The Minimal Boolean Expression is:
+F = (ABce) + (ACd) + (aBdE)
+
+Process returned -1073741819 (0xC0000005)   execution time : 1.152 s
+Press any key to continue.
+

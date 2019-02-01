@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1539715084 source:d:\lindenwood\2018 fall\computer architecture\projects\computerarchproject1\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<vector>
+

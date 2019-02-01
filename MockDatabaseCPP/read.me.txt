@@ -1,0 +1,34 @@
+Name: Adam Ebel
+Date: 9/9/2018
+Platform: Winodws 10
+
+Special steps: This project doesn't make it's own files. It only opens and alters the ones it is able to reach. Ie Airlines.txt Flights.txt Cities.txt
+
+Bugs: 
+- if the user input doesn't complete their command the program will crash. 
+	- >>> a		- >>> b		- >>> c 	ect ect
+- another bug regards the listing of the flights. It isn't program crashing and it is mostly a formating thing. 
+In order to correctly display the american airlines (airline codes with 2 characters) in some cases, I forced there to be an extra space to act as if there is 3 characters.
+This just makes listing flights look strange (adding the extra spaces).
+- Incomplete commands crash the program
+- The find function assumes you do a 0 if you don't specify a 1.
+- The listing functions print out empty spaces if it doesn't find what it should be looking for in the files
+
+
+- One of the problems I faced was trying to open a file to read and then write into the file.
+Instead of using fstream I ended up using an instance of ifstream and ofstream in the same function.
+This process is used in all of the add functions that directly use a file. 
+- Another problem I faced was using the UserInput. The multiple commands on a single line had me stumped for a but.
+I ended up changing the string that was user input and made it a vector string so I could treat it as a vector.
+Each instance of a command just being a value in a vector that I then compared to a character.
+Since it was a vector of char the value was the same value as the same character, so easy comparing.
+This was also used for printing out the flight list. 
+- One of the major problems I am facing is the finding flights, for a long while I was sending the command code of 1 or 0 inn a string but I needed a int. 
+It was just relearning how to change the datatype.
+Also finding a simple way to find a transfer flight is rather hard and I just settled on using nested if statements.
+Though, I am sure there is a more simple way than nested ifs.
+
+Log- I didnt keep up with a this but I know I went to peper before actual coding, Started with adding cities then airlines and finally flights.
+After that I focused on listing the files, first the cities then the airlines and lastly flights.
+the last thing was finding flights which was very diffucult to do at first. 
+Infact I did the transfer flights first, making sure they were correct before looking for the direct files.
